@@ -9,6 +9,8 @@ Feature: Get API Test
     Given path '/users?page=2'
     When method GET
     Then status 200
+    And match response.data[].first_name =! null
+    And assert response.data.length == 6
     And print response
     And print responseStatus
     And print responseHeaders
