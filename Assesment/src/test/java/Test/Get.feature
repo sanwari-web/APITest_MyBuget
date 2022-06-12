@@ -1,4 +1,4 @@
-Feature: Sample API Test
+Feature: Get API Test
 
   Background: 
     * url 'https://reqres.in/api'
