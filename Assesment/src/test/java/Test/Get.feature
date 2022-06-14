@@ -10,6 +10,7 @@ Feature: Get API Test
     When method GET
     Then status 200
     And assert response.data.length == 6
+    And match response.data[1].first_name != '#number'
     And print response
     And print responseStatus
     And print responseHeaders
