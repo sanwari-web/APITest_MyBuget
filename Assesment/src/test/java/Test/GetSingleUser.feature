@@ -4,7 +4,7 @@ Feature: Get API Test
     * url 'https://reqres.in/api'
     * header Accept = 'application/json'
 
-  #Get all users
+  #Get Single user
   Scenario: Get method 1
     Given path 'users/2'
     When method GET
